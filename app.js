@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const ejs = require("ejs");
 const { findBlogs, insertPost } = require("./db");
+require("dotenv").config()
 
 const port = process.env.PORT || 3000;
 
